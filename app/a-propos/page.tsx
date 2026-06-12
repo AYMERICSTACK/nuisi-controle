@@ -225,7 +225,7 @@ export default function AboutPage() {
                   className="rounded-2xl border border-white/10 bg-white/5 p-6 font-black text-white/85 transition hover:bg-white hover:text-[#0f0f10]"
                 >
                   {expertise}
-                  <span className="mt-4 block text-sm font-bold text-white/45">
+                  <span className="mt-4 block text-sm font-bold text-[#C1121F] transition-all duration-300 group-hover:translate-x-1">
                     Découvrir →
                   </span>
                 </Link>
