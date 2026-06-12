@@ -42,7 +42,24 @@ export async function POST(request: Request) {
       html: `
         <div style="font-family:Arial,sans-serif;background:#f4f4f5;padding:32px;">
           <div style="max-width:640px;margin:auto;background:white;border-radius:20px;padding:32px;">
-            <!-- Logo Nuisi Contrôle -->
+            <div style="text-align:center;margin-bottom:24px;">
+  <img
+    src="https://nuisi-controle.vercel.app/logo/logo-nuisi-controle.png"
+    alt="Nuisi Contrôle"
+    style="max-width:220px;height:auto;"
+  />
+</div>
+<p
+  style="
+    text-align:center;
+    color:#C1121F;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:24px;
+  "
+>
+  Dératisation • Désinsectisation • Désinfection
+</p>
 
             <h1 style="margin:0 0 16px;color:#0f0f10;">Nouvelle demande de contact</h1>
             <p style="color:#52525b;">Une nouvelle demande a été envoyée depuis le site Nuisi Contrôle.</p>
@@ -94,11 +111,26 @@ export async function POST(request: Request) {
       html: `
         <div style="font-family:Arial,sans-serif;background:#f4f4f5;padding:32px;">
           <div style="max-width:640px;margin:auto;background:white;border-radius:20px;padding:32px;">
-            <!-- Logo Nuisi Contrôle -->
+            <div style="text-align:center;margin-bottom:24px;">
+  <img
+    src="https://nuisi-controle.vercel.app/logo/logo-nuisi-controle.png"
+    alt="Nuisi Contrôle"
+    style="max-width:220px;height:auto;"
+  />
+</div>
 
-            <p style="margin:0 0 12px;color:#C1121F;font-weight:bold;text-transform:uppercase;letter-spacing:2px;">
-              Nuisi Contrôle
-            </p>
+<p
+  style="
+    text-align:center;
+    color:#C1121F;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:24px;
+  "
+>
+  Dératisation • Désinsectisation • Désinfection
+</p>
+
 
             <h1 style="margin:0 0 16px;color:#0f0f10;">Votre demande a bien été envoyée</h1>
 
