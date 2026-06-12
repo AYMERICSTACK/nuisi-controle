@@ -14,6 +14,15 @@ export async function POST(request: Request) {
       );
     }
 
+    const now = new Date();
+
+    const formattedDate = now.toLocaleDateString("fr-FR");
+
+    const formattedTime = now.toLocaleTimeString("fr-FR", {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
+
     const toEmail = process.env.CONTACT_TO_EMAIL;
     const fromEmail = process.env.CONTACT_FROM_EMAIL;
 
@@ -33,13 +42,30 @@ export async function POST(request: Request) {
       html: `
         <div style="font-family:Arial,sans-serif;background:#f4f4f5;padding:32px;">
           <div style="max-width:640px;margin:auto;background:white;border-radius:20px;padding:32px;">
+            <!-- Logo Nuisi Contrôle -->
+
             <h1 style="margin:0 0 16px;color:#0f0f10;">Nouvelle demande de contact</h1>
             <p style="color:#52525b;">Une nouvelle demande a été envoyée depuis le site Nuisi Contrôle.</p>
 
+            <div style="margin-top:24px;color:#52525b;">
+              <p><strong>Date :</strong> ${formattedDate}</p>
+              <p><strong>Heure :</strong> ${formattedTime}</p>
+            </div>
+
             <div style="margin-top:24px;padding:20px;background:#0f0f10;border-radius:16px;color:white;">
               <p><strong>Nom :</strong> ${name}</p>
-              <p><strong>Téléphone :</strong> ${phone}</p>
-              <p><strong>Email :</strong> ${email}</p>
+              <p>
+                <strong>Téléphone :</strong>
+                <a href="tel:${phone}" style="color:white;text-decoration:none;">
+                  ${phone}
+                </a>
+              </p>
+              <p>
+                <strong>Email :</strong>
+                <a href="mailto:${email}" style="color:#60a5fa;">
+                  ${email}
+                </a>
+              </p>
               <p><strong>Service :</strong> ${service}</p>
             </div>
 
@@ -68,6 +94,8 @@ export async function POST(request: Request) {
       html: `
         <div style="font-family:Arial,sans-serif;background:#f4f4f5;padding:32px;">
           <div style="max-width:640px;margin:auto;background:white;border-radius:20px;padding:32px;">
+            <!-- Logo Nuisi Contrôle -->
+
             <p style="margin:0 0 12px;color:#C1121F;font-weight:bold;text-transform:uppercase;letter-spacing:2px;">
               Nuisi Contrôle
             </p>
@@ -92,7 +120,12 @@ export async function POST(request: Request) {
             <p style="margin-top:24px;color:#52525b;line-height:1.7;">
               En cas d’urgence, vous pouvez nous appeler directement au :
               <br />
-              <strong style="font-size:18px;color:#0f0f10;">06 62 33 20 36</strong>
+              <a
+                href="tel:+33662332036"
+                style="font-size:18px;color:#0f0f10;font-weight:bold;text-decoration:none;"
+              >
+                06 62 33 20 36
+              </a>
             </p>
 
             <p style="margin-top:32px;color:#71717a;font-size:14px;">
