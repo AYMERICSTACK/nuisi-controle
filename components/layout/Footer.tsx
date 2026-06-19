@@ -4,6 +4,7 @@ const services = [
   { label: "Dératisation", href: "/deratisation" },
   { label: "Désinsectisation", href: "/desinsectisation" },
   { label: "Désinfection", href: "/desinfection" },
+  { label: "Dépigeonnage", href: "/depigeonnage" },
 ];
 
 const links = [
@@ -29,7 +30,7 @@ export function Footer() {
             </p>
 
             <p className="mt-6 max-w-sm leading-7 text-white/60">
-              Dératisation, désinsectisation et désinfection pour particuliers,
+              Dératisation, désinsectisation, désinfection et dépigeonnage pour particuliers,
               professionnels et collectivités dans l’Ain et le bassin lyonnais.
             </p>
 
@@ -78,12 +79,12 @@ export function Footer() {
 
             <div className="mt-5 space-y-3 text-white/60">
               <p>Toussieux, Ain</p>
-              <p>Intervention Ain & bassin lyonnais</p>
+              <p>Intervention région lyonnaise & Ain</p>
               <p>contact@nuisicontrole.fr</p>
             </div>
 
             <div className="mt-6 flex flex-wrap gap-2">
-              {["Ain", "Dombes", "Val de Saône", "Nord Lyonnais"].map(
+              {["Lyon", "Villeurbanne", "Nord Lyonnais", "Ain"].map(
                 (area) => (
                   <span
                     key={area}

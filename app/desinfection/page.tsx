@@ -54,10 +54,10 @@ const targets = [
 ];
 
 const serviceAreas = [
-  "Ain",
-  "Dombes",
-  "Val de Saône",
+  "Lyon Métropole",
+  "Villeurbanne",
   "Nord Lyonnais",
+  "Ain",
   "Bassin lyonnais",
 ];
 
@@ -70,6 +70,9 @@ const cities = [
   "Genay",
   "Massieux",
   "Lyon",
+  "Villeurbanne",
+  "Caluire-et-Cuire",
+  "Rillieux-la-Pape",
   "Bourg-en-Bresse",
 ];
 

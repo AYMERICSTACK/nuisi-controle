@@ -22,6 +22,13 @@ const services = [
     href: "/desinfection",
     image: "/images/services/desinfection.jpg",
   },
+  {
+    title: "Dépigeonnage",
+    description:
+      "Solutions de dépigeonnage pour protéger bâtiments, toitures, façades et locaux professionnels.",
+    href: "/depigeonnage",
+    image: "/images/services/technicien-nuisible.png",
+  },
 ];
 
 const targets = ["Particuliers", "Professionnels", "Collectivités"];
@@ -40,13 +47,13 @@ export default function Home() {
             </div>
 
             <h1 className="max-w-4xl text-4xl font-black leading-[0.95] tracking-tight md:text-6xl lg:text-7xl">
-              Dératisation, désinsectisation & désinfection.
+              Dératisation, désinsectisation, désinfection & dépigeonnage.
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-white/70">
               Nuisi Contrôle intervient rapidement auprès des particuliers,
-              professionnels et collectivités pour éliminer les nuisibles et
-              sécuriser vos espaces.
+              professionnels et collectivités pour éliminer les nuisibles,
+              protéger vos bâtiments et sécuriser vos espaces.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -58,7 +65,7 @@ export default function Home() {
               </Link>
 
               <a
-                href="tel:+33000000000"
+                href="tel:+33662332036"
                 className="rounded-full border border-white/20 bg-white/10 px-7 py-4 text-center text-sm font-black uppercase tracking-wide text-white backdrop-blur transition hover:-translate-y-1 hover:bg-white/15"
               >
                 Appeler maintenant
@@ -111,7 +118,7 @@ export default function Home() {
             </div>
 
             <div className="absolute right-6 top-6 rounded-2xl border border-white/10 bg-primary px-5 py-4 text-white shadow-2xl shadow-primary/40">
-              <p className="text-3xl font-black">3</p>
+              <p className="text-3xl font-black">4</p>
               <p className="text-xs font-bold uppercase tracking-widest">
                 Expertises
               </p>
@@ -135,7 +142,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-8 lg:grid-cols-3">
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {services.map((service) => (
               <Link
                 key={service.href}
@@ -152,7 +159,9 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
 
                   <div className="absolute bottom-6 left-6 right-6">
-                    <h3 className="text-3xl font-black">{service.title}</h3>
+                    <h3 className="text-2xl font-black leading-tight">
+                      {service.title}
+                    </h3>
                   </div>
                 </div>
 
@@ -170,6 +179,32 @@ export default function Home() {
                 </div>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-5 py-20 lg:px-8">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 rounded-[2rem] border border-zinc-200 bg-zinc-50 p-8 shadow-sm md:grid-cols-[0.8fr_1.2fr] md:p-12">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.24em] text-primary">
+              Certification professionnelle
+            </p>
+            <h2 className="mt-4 text-3xl font-black tracking-tight md:text-4xl">
+              Agrément Certibiocide
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-zinc-600">
+              Nuisi Contrôle dispose de la certification Certibiocide, gage
+              d’une utilisation raisonnée et réglementée des produits biocides
+              dans le cadre des interventions professionnelles.
+            </p>
+          </div>
+
+          <div className="rounded-[1.5rem] bg-white p-6 shadow-sm">
+            <img
+              src="/images/certifications/certibiocide.png"
+              alt="Certification Certibiocide"
+              className="h-auto w-full object-contain"
+            />
           </div>
         </div>
       </section>
@@ -202,7 +237,7 @@ export default function Home() {
             </div>
 
             <div className="rounded-2xl bg-[#0f0f10] px-6 py-4 text-white">
-              <p className="text-3xl font-black">3</p>
+              <p className="text-3xl font-black">4</p>
               <p className="text-sm uppercase tracking-wider">
                 Expertises métiers
               </p>
@@ -270,13 +305,15 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-14 grid gap-8 lg:grid-cols-3">
+          <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div className="group rounded-[2rem] border border-white/10 bg-[#0f0f10] p-8 text-white transition hover:-translate-y-2 hover:border-primary/30">
               <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-2xl">
                 🐀
               </div>
 
-              <h3 className="text-3xl font-black">Dératisation</h3>
+              <h3 className="text-2xl font-black leading-tight">
+                Dératisation
+              </h3>
 
               <p className="mt-3 text-white/60">
                 Traitement des rongeurs présents dans les habitations, locaux
@@ -284,7 +321,7 @@ export default function Home() {
               </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
-                {["Rats", "Souris", "Mulots", "Campagnols"].map((item) => (
+                {["Rats", "Souris", "Mulots"].map((item) => (
                   <span
                     key={item}
                     className="rounded-full bg-white/10 px-4 py-2 text-sm font-semibold"
@@ -299,8 +336,9 @@ export default function Home() {
               <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-2xl">
                 🪳
               </div>
-
-              <h3 className="text-3xl font-black">Désinsectisation</h3>
+              <h3 className="text-2xl font-black leading-tight">
+                Désinsectisation
+              </h3>
 
               <p className="mt-3 text-white/60">
                 Élimination durable des insectes nuisibles grâce à des
@@ -310,7 +348,6 @@ export default function Home() {
               <div className="mt-6 flex flex-wrap gap-3">
                 {[
                   "Cafards",
-                  "Blattes",
                   "Punaises de lit",
                   "Fourmis",
                   "Puces",
@@ -332,7 +369,9 @@ export default function Home() {
                 🧴
               </div>
 
-              <h3 className="text-3xl font-black">Désinfection</h3>
+              <h3 className="text-2xl font-black leading-tight">
+                Désinfection
+              </h3>
 
               <p className="mt-3 text-white/60">
                 Assainissement complet des logements, commerces, bureaux et
@@ -355,6 +394,32 @@ export default function Home() {
                 ))}
               </div>
             </div>
+
+            <div className="group rounded-[2rem] border border-white/10 bg-[#0f0f10] p-8 text-white transition hover:-translate-y-2 hover:border-primary/30">
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-2xl">
+                🐦
+              </div>
+
+              <h3 className="text-2xl font-black leading-tight">
+                Dépigeonnage
+              </h3>
+
+              <p className="mt-3 text-white/60">
+                Protection des bâtiments, toitures, façades et zones sensibles
+                contre les pigeons et leurs nuisances.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                {["Pigeons", "Fientes", "Toitures", "Façades"].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full bg-white/10 px-4 py-2 text-sm font-semibold"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -366,25 +431,29 @@ export default function Home() {
               Zone d’intervention
             </p>
             <h2 className="mt-4 text-4xl font-black tracking-tight">
-              Toussieux, Ain et bassin lyonnais.
+              Région lyonnaise, Ain et bassin lyonnais.
             </h2>
           </div>
 
           <div>
             <p className="text-lg leading-8 text-white/70">
-              Basé à Toussieux, Nuisi Contrôle intervient dans l’Ain, la Dombes,
-              le Val de Saône, le Nord Lyonnais et le bassin lyonnais pour les
+              Basé à Toussieux, Nuisi Contrôle intervient largement sur la
+              région lyonnaise, Lyon, Villeurbanne, Caluire-et-Cuire,
+              Rillieux-la-Pape, l’Ain et le bassin lyonnais pour les
               particuliers, professionnels et collectivités.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
               {[
+                "Lyon",
+                "Villeurbanne",
+                "Caluire-et-Cuire",
+                "Rillieux-la-Pape",
+                "Neuville-sur-Saône",
                 "Toussieux",
                 "Trévoux",
                 "Reyrieux",
                 "Villefranche-sur-Saône",
-                "Neuville-sur-Saône",
-                "Lyon",
                 "Bourg-en-Bresse",
               ].map((city) => (
                 <span
@@ -474,7 +543,7 @@ export default function Home() {
               {
                 question: "Quels nuisibles traitez-vous ?",
                 answer:
-                  "Nous traitons notamment les rats, souris, mulots, cafards, blattes, punaises de lit, fourmis, puces, guêpes, frelons et autres nuisibles.",
+                  "Nous traitons notamment les rats, souris, mulots, cafards, punaises de lit, fourmis, puces, guêpes, frelons, pigeons et autres nuisibles.",
               },
               {
                 question:
@@ -515,9 +584,9 @@ export default function Home() {
             intervention rapide ?
           </h2>
           <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-white/70">
-            Dératisation • Désinsectisation • Désinfection
+            Dératisation • Désinsectisation • Désinfection • Dépigeonnage
             <br />
-            Intervention dans l'Ain et le bassin lyonnais.
+            Intervention dans la région lyonnaise, l'Ain et le bassin lyonnais.
           </p>
           <div className="mt-12 flex flex-wrap justify-center gap-4">
             <div className="rounded-2xl bg-primary px-6 py-4 text-white">

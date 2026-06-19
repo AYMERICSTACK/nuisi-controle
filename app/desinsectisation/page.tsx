@@ -6,7 +6,6 @@ const phoneHref = "tel:+33662332036";
 
 const insects = [
   "Cafards",
-  "Blattes",
   "Punaises de lit",
   "Fourmis",
   "Puces",
@@ -57,10 +56,10 @@ const targets = [
 ];
 
 const serviceAreas = [
-  "Ain",
-  "Dombes",
-  "Val de Saône",
+  "Lyon Métropole",
+  "Villeurbanne",
   "Nord Lyonnais",
+  "Ain",
   "Bassin lyonnais",
 ];
 
@@ -73,6 +72,9 @@ const cities = [
   "Genay",
   "Massieux",
   "Lyon",
+  "Villeurbanne",
+  "Caluire-et-Cuire",
+  "Rillieux-la-Pape",
   "Bourg-en-Bresse",
 ];
 
@@ -80,7 +82,7 @@ const faq = [
   {
     question: "Quels insectes traitez-vous ?",
     answer:
-      "Nuisi Contrôle intervient contre les cafards, blattes, punaises de lit, fourmis, puces, guêpes, frelons et autres insectes nuisibles.",
+      "Nuisi Contrôle intervient contre les cafards, punaises de lit, fourmis, puces, guêpes, frelons et autres insectes nuisibles.",
   },
   {
     question: "Intervenez-vous contre les punaises de lit ?",
@@ -93,16 +95,16 @@ const faq = [
       "Oui, Nuisi Contrôle accompagne les professionnels, restaurants, commerces, entreprises et collectivités avec des solutions adaptées aux contraintes d’activité.",
   },
   {
-    question: "Faut-il agir rapidement en cas de cafards ou blattes ?",
+    question: "Faut-il agir rapidement en cas de cafards ?",
     answer:
-      "Oui, les cafards et blattes peuvent se reproduire rapidement. Plus l’intervention est rapide, plus le traitement a de chances d’être efficace durablement.",
+      "Oui, les cafards peuvent se reproduire rapidement. Plus l’intervention est rapide, plus le traitement a de chances d’être efficace durablement.",
   },
 ];
 
 export const metadata = {
   title: "Désinsectisation Ain, Toussieux, Trévoux & Lyon | Nuisi Contrôle",
   description:
-    "Nuisi Contrôle intervient pour la désinsectisation dans l’Ain, à Toussieux, Trévoux, Reyrieux, Villefranche-sur-Saône, Nord Lyonnais et bassin lyonnais. Traitement cafards, blattes, punaises de lit, fourmis, puces, guêpes et frelons.",
+    "Nuisi Contrôle intervient pour la désinsectisation dans l’Ain, à Toussieux, Trévoux, Reyrieux, Villefranche-sur-Saône, Nord Lyonnais et bassin lyonnais. Traitement cafards, punaises de lit, fourmis, puces, guêpes et frelons.",
 };
 
 export default function DesinsectisationPage() {
@@ -195,7 +197,7 @@ export default function DesinsectisationPage() {
               Comment repérer une infestation d’insectes ?
             </h2>
             <p className="mt-6 text-lg leading-8 text-zinc-600">
-              Cafards, blattes, punaises de lit, fourmis ou puces peuvent
+              Cafards, punaises de lit, fourmis ou puces peuvent
               rapidement devenir difficiles à maîtriser. Une intervention rapide
               permet d’éviter leur propagation.
             </p>
@@ -271,12 +273,12 @@ export default function DesinsectisationPage() {
                 La présence d’insectes nuisibles dans une habitation, un
                 commerce, un restaurant ou un local professionnel peut
                 rapidement devenir problématique. Certains insectes comme les
-                cafards, blattes ou punaises de lit se développent vite et
+                cafards, punaises de lit se développent vite et
                 peuvent contaminer plusieurs zones en peu de temps.
               </p>
 
               <p>
-                Les cafards et blattes recherchent la chaleur, l’humidité et les
+                Les cafards recherchent la chaleur, l’humidité et les
                 zones alimentaires. Les punaises de lit, elles, peuvent
                 provoquer des piqûres, des démangeaisons et une gêne importante
                 au quotidien. Les guêpes et frelons nécessitent également une

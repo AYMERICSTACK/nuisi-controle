@@ -58,7 +58,7 @@ export async function POST(request: Request) {
     margin-bottom:24px;
   "
 >
-  Dératisation • Désinsectisation • Désinfection
+  Dératisation • Désinsectisation • Désinfection • Dépigeonnage
 </p>
 
             <h1 style="margin:0 0 16px;color:#0f0f10;">Nouvelle demande de contact</h1>
@@ -128,7 +128,7 @@ export async function POST(request: Request) {
     margin-bottom:24px;
   "
 >
-  Dératisation • Désinsectisation • Désinfection
+  Dératisation • Désinsectisation • Désinfection • Dépigeonnage
 </p>
 
 

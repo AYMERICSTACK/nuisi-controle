@@ -4,13 +4,13 @@ import { ContactForm } from "@/components/contact/ContactForm";
 const phoneNumber = "06 62 33 20 36";
 const phoneHref = "tel:+33662332036";
 
-const services = ["Dératisation", "Désinsectisation", "Désinfection"];
+const services = ["Dératisation", "Désinsectisation", "Désinfection", "Dépigeonnage"];
 
 const serviceAreas = [
-  "Ain",
-  "Dombes",
-  "Val de Saône",
+  "Lyon Métropole",
+  "Villeurbanne",
   "Nord Lyonnais",
+  "Ain",
   "Bassin lyonnais",
 ];
 
@@ -23,6 +23,9 @@ const cities = [
   "Genay",
   "Massieux",
   "Lyon",
+  "Villeurbanne",
+  "Caluire-et-Cuire",
+  "Rillieux-la-Pape",
   "Bourg-en-Bresse",
 ];
 
@@ -44,7 +47,7 @@ const contactReasons = [
 export const metadata = {
   title: "Contact Nuisi Contrôle | Dératisation, désinsectisation Ain",
   description:
-    "Contactez Nuisi Contrôle pour une dératisation, désinsectisation ou désinfection dans l’Ain, la Dombes, le Val de Saône, le Nord Lyonnais et le bassin lyonnais.",
+    "Contactez Nuisi Contrôle pour une dératisation, désinsectisation, désinfection ou dépigeonnage dans la région lyonnaise, l’Ain, la Dombes, le Val de Saône, le Nord Lyonnais et le bassin lyonnais.",
 };
 
 export default function ContactPage() {
@@ -264,8 +267,8 @@ export default function ContactPage() {
             </h2>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/65">
-              Contactez Nuisi Contrôle pour une dératisation, désinsectisation
-              ou désinfection dans l’Ain et le bassin lyonnais.
+              Contactez Nuisi Contrôle pour une dératisation, désinsectisation,
+              désinfection ou dépigeonnage dans l’Ain et le bassin lyonnais.
             </p>
 
             <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">

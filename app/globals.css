@@ -43,3 +43,22 @@ a {
   background: var(--primary);
   color: white;
 }
+
+@media (hover: hover) {
+  main a[class*="shadow"],
+  main button[class*="shadow"] {
+    will-change: transform;
+  }
+
+  main div[class*="rounded-[1.5rem]"],
+  main div[class*="rounded-[1.7rem]"] {
+    transition-property: transform, box-shadow, border-color, background-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+  }
+
+  main div[class*="rounded-[1.5rem]"]:hover,
+  main div[class*="rounded-[1.7rem]"]:hover {
+    transform: translateY(-0.25rem);
+  }
+}

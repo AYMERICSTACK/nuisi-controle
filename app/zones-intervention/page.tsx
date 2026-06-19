@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const serviceAreas = [
   {
-    title: "Ain",
+    title: "Région lyonnaise",
     description:
-      "Interventions de dératisation, désinsectisation et désinfection dans l'ensemble du département de l'Ain.",
+      "Interventions de dératisation, désinsectisation, désinfection et dépigeonnage à Lyon, Villeurbanne, Caluire-et-Cuire, Rillieux-la-Pape et dans le bassin lyonnais.",
   },
   {
     title: "Dombes",
@@ -22,28 +22,28 @@ const serviceAreas = [
       "Couverture des communes du Nord Lyonnais pour tous les besoins liés aux nuisibles.",
   },
   {
-    title: "Bassin Lyonnais",
+    title: "Ain",
     description:
-      "Interventions autour de Lyon pour les particuliers et professionnels.",
+      "Interventions dans l’Ain pour les particuliers, professionnels et collectivités.",
   },
 ];
 
 const cities = [
+  "Lyon",
+  "Villeurbanne",
+  "Caluire-et-Cuire",
+  "Rillieux-la-Pape",
+  "Neuville-sur-Saône",
+  "Genay",
+  "Massieux",
+  "Villefranche-sur-Saône",
   "Toussieux",
   "Trévoux",
   "Reyrieux",
-  "Genay",
-  "Massieux",
-  "Neuville-sur-Saône",
-  "Villefranche-sur-Saône",
   "Saint-André-de-Corcy",
   "Villars-les-Dombes",
   "Meximieux",
   "Ambérieu-en-Bugey",
-  "Rillieux-la-Pape",
-  "Caluire-et-Cuire",
-  "Villeurbanne",
-  "Lyon",
   "Bourg-en-Bresse",
 ];
 
@@ -51,7 +51,7 @@ export const metadata = {
   title:
     "Zones d'intervention Ain, Dombes, Val de Saône & Lyon | Nuisi Contrôle",
   description:
-    "Nuisi Contrôle intervient dans l'Ain, la Dombes, le Val de Saône, le Nord Lyonnais et le bassin lyonnais pour la dératisation, désinsectisation et désinfection.",
+    "Nuisi Contrôle intervient dans la région lyonnaise, l'Ain, la Dombes, le Val de Saône, le Nord Lyonnais et le bassin lyonnais pour la dératisation, désinsectisation, désinfection et dépigeonnage.",
 };
 
 export default function ZonesInterventionPage() {
@@ -71,7 +71,7 @@ export default function ZonesInterventionPage() {
 
           <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-white/70">
             Nuisi Contrôle intervient rapidement pour la dératisation,
-            désinsectisation et désinfection dans l'Ain, la Dombes, le Val de
+            désinsectisation, désinfection et dépigeonnage dans la région lyonnaise, l'Ain, la Dombes, le Val de
             Saône, le Nord Lyonnais et le bassin lyonnais.
           </p>
 
@@ -163,7 +163,7 @@ export default function ZonesInterventionPage() {
             </p>
 
             <h2 className="mt-4 text-4xl font-black tracking-tight md:text-5xl">
-              Dératisation, désinsectisation et désinfection dans l'Ain.
+              Dératisation, désinsectisation, désinfection et dépigeonnage autour de Lyon.
             </h2>
           </div>
 
@@ -171,8 +171,8 @@ export default function ZonesInterventionPage() {
             <div className="space-y-6">
               <p>
                 Nuisi Contrôle intervient auprès des particuliers,
-                professionnels et collectivités pour le traitement des nuisibles
-                et la désinfection des locaux. Grâce à sa proximité avec le
+                professionnels et collectivités pour le traitement des nuisibles,
+                le dépigeonnage et la désinfection des locaux. Grâce à sa proximité avec le
                 terrain, les délais d'intervention peuvent être réduits sur une
                 grande partie du secteur.
               </p>
@@ -186,9 +186,10 @@ export default function ZonesInterventionPage() {
 
             <div className="space-y-6">
               <p>
-                Les secteurs couverts comprennent notamment Toussieux, Trévoux,
-                Reyrieux, Villefranche-sur-Saône, Genay, Massieux,
-                Bourg-en-Bresse et l'ensemble du bassin lyonnais.
+                Les secteurs couverts comprennent notamment Lyon, Villeurbanne, Caluire-et-Cuire, Rillieux-la-Pape,
+                Neuville-sur-Saône, Toussieux, Trévoux, Reyrieux,
+                Villefranche-sur-Saône, Genay, Massieux, Bourg-en-Bresse
+                et l'ensemble du bassin lyonnais.
               </p>
 
               <p>
@@ -210,8 +211,8 @@ export default function ZonesInterventionPage() {
             </h2>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/65">
-              Contactez Nuisi Contrôle pour une intervention rapide dans l'Ain,
-              la Dombes, le Val de Saône, le Nord Lyonnais et le bassin
+              Contactez Nuisi Contrôle pour une intervention rapide dans la région lyonnaise,
+              l'Ain, la Dombes, le Val de Saône, le Nord Lyonnais et le bassin
               lyonnais.
             </p>
 

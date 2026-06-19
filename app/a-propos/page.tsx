@@ -22,23 +22,27 @@ const values = [
   },
 ];
 
-const expertises = ["Dératisation", "Désinsectisation", "Désinfection"];
+const expertises = [
+  "Dératisation",
+  "Désinsectisation",
+  "Désinfection",
+  "Dépigeonnage",
+];
 
 const targets = ["Particuliers", "Professionnels", "Collectivités"];
 
 const serviceAreas = [
-  "Toussieux",
-  "Ain",
-  "Dombes",
-  "Val de Saône",
+  "Lyon Métropole",
+  "Villeurbanne",
   "Nord Lyonnais",
+  "Ain",
   "Bassin lyonnais",
 ];
 
 export const metadata = {
   title: "À propos de Nuisi Contrôle | Dératisation & désinsectisation Ain",
   description:
-    "Découvrez Nuisi Contrôle, entreprise spécialisée en dératisation, désinsectisation et désinfection dans l’Ain, la Dombes, le Val de Saône et le bassin lyonnais.",
+    "Découvrez Nuisi Contrôle, entreprise spécialisée en dératisation, désinsectisation, désinfection et dépigeonnage dans l’Ain, la Dombes, le Val de Saône et le bassin lyonnais.",
 };
 
 export default function AboutPage() {
@@ -61,8 +65,8 @@ export default function AboutPage() {
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-white/70">
               Nuisi Contrôle accompagne les particuliers, professionnels et
-              collectivités pour leurs besoins en dératisation, désinsectisation
-              et désinfection dans l’Ain et le bassin lyonnais.
+              collectivités pour leurs besoins en dératisation, désinsectisation,
+              désinfection et dépigeonnage dans l’Ain et la région lyonnaise.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -151,7 +155,7 @@ export default function AboutPage() {
               </p>
 
               <p>
-                L’entreprise intervient dans l’Ain, la Dombes, le Val de Saône,
+                L’entreprise intervient dans la région lyonnaise, l’Ain, la Dombes, le Val de Saône,
                 le Nord Lyonnais et le bassin lyonnais avec une approche locale,
                 sérieuse et orientée résultat.
               </p>
@@ -202,7 +206,7 @@ export default function AboutPage() {
               </p>
 
               <h2 className="mt-4 text-4xl font-black tracking-tight md:text-5xl">
-                Trois domaines d’intervention.
+                Quatre domaines d’intervention.
               </h2>
 
               <p className="mt-6 text-lg leading-8 text-white/65">
@@ -211,7 +215,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-3">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {expertises.map((expertise) => (
                 <Link
                   key={expertise}
@@ -220,7 +224,9 @@ export default function AboutPage() {
                       ? "/deratisation"
                       : expertise === "Désinsectisation"
                         ? "/desinsectisation"
-                        : "/desinfection"
+                        : expertise === "Désinfection"
+                        ? "/desinfection"
+                        : "/depigeonnage"
                   }
                   className="rounded-2xl border border-white/10 bg-white/5 p-6 font-black text-white/85 transition hover:bg-white hover:text-[#0f0f10]"
                 >
@@ -254,7 +260,7 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <div className="grid gap-4 sm:grid-cols-3">
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {targets.map((target) => (
                   <div
                     key={target}
@@ -295,7 +301,7 @@ export default function AboutPage() {
 
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/65">
               Contactez Nuisi Contrôle pour une intervention de dératisation,
-              désinsectisation ou désinfection dans l’Ain et le bassin lyonnais.
+              désinsectisation, désinfection ou dépigeonnage dans l’Ain et la région lyonnaise.
             </p>
 
             <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">

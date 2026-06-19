@@ -9,6 +9,7 @@ const navItems = [
   { label: "Dératisation", href: "/deratisation" },
   { label: "Désinsectisation", href: "/desinsectisation" },
   { label: "Désinfection", href: "/desinfection" },
+  { label: "Dépigeonnage", href: "/depigeonnage" },
   { label: "Zones", href: "/zones-intervention" },
   { label: "À propos", href: "/a-propos" },
   { label: "Contact", href: "/contact" },
@@ -44,12 +45,12 @@ export function Header() {
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-5 lg:flex">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-semibold text-white/70 transition hover:text-white"
+              className="whitespace-nowrap text-sm font-semibold text-white/70 transition hover:text-white"
             >
               {item.label}
             </Link>

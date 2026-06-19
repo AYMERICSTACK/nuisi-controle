@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/deratisation",
     "/desinsectisation",
     "/desinfection",
+    "/depigeonnage",
     "/zones-intervention",
     "/a-propos",
     "/contact",

@@ -3,46 +3,53 @@ import Link from "next/link";
 const phoneNumber = "06 62 33 20 36";
 const phoneHref = "tel:+33662332036";
 
-const infestationSigns = [
-  "Bruits dans les murs, combles ou cloisons",
-  "Présence de crottes ou d’urine",
-  "Odeurs inhabituelles et persistantes",
-  "Câbles, gaines ou emballages rongés",
-  "Traces de passage, trous ou nids",
+const issues = [
+  "Présence de pigeons sur toiture",
+  "Fientes sur façades ou balcons",
+  "Nids dans les zones sensibles",
+  "Dégradations des bâtiments",
+  "Nuisances sonores et sanitaires",
 ];
 
-const rodents = ["Rats", "Souris", "Mulots"];
+const solutions = [
+  "Protection de toitures",
+  "Protection de façades",
+  "Balcons & rebords",
+  "Locaux professionnels",
+  "Bâtiments collectifs",
+  "Zones sensibles",
+];
 
 const methodSteps = [
   {
-    title: "Diagnostic sur place",
-    text: "Analyse des signes d’infestation, des zones sensibles et du niveau de présence des rongeurs.",
+    title: "Diagnostic",
+    text: "Analyse des zones fréquentées par les pigeons, des accès et des points sensibles du bâtiment.",
   },
   {
-    title: "Identification des accès",
-    text: "Recherche des passages, ouvertures, points d’entrée et zones favorables à l’installation des nuisibles.",
+    title: "Préconisation",
+    text: "Choix d’une solution adaptée selon le lieu, la configuration et le niveau de nuisance.",
   },
   {
-    title: "Traitement adapté",
-    text: "Mise en place d’une solution professionnelle selon le lieu, le type de rongeur et le niveau d’infestation.",
+    title: "Installation",
+    text: "Mise en place des dispositifs de protection pour limiter l’installation des pigeons.",
   },
   {
     title: "Sécurisation",
-    text: "Protection des zones traitées avec une intervention pensée pour les particuliers, professionnels et collectivités.",
+    text: "Protection des zones exposées afin de préserver les façades, toitures, balcons et locaux.",
   },
   {
-    title: "Prévention récidive",
-    text: "Conseils concrets pour limiter les risques de retour des rats, souris ou autres rongeurs.",
+    title: "Prévention",
+    text: "Conseils pour limiter les risques de retour et surveiller les zones sensibles.",
   },
 ];
 
 const targets = [
-  "Maisons individuelles",
-  "Appartements",
-  "Restaurants & commerces",
-  "Entreprises",
-  "Locaux professionnels",
+  "Particuliers",
+  "Professionnels",
   "Collectivités",
+  "Syndics",
+  "Commerces",
+  "Entreprises",
 ];
 
 const serviceAreas = [
@@ -54,50 +61,50 @@ const serviceAreas = [
 ];
 
 const cities = [
-  "Toussieux",
-  "Trévoux",
-  "Reyrieux",
-  "Villefranche-sur-Saône",
-  "Neuville-sur-Saône",
-  "Genay",
-  "Massieux",
   "Lyon",
   "Villeurbanne",
   "Caluire-et-Cuire",
   "Rillieux-la-Pape",
+  "Neuville-sur-Saône",
+  "Genay",
+  "Massieux",
+  "Villefranche-sur-Saône",
+  "Toussieux",
+  "Trévoux",
+  "Reyrieux",
   "Bourg-en-Bresse",
 ];
 
 const faq = [
   {
-    question: "Quand faut-il faire appel à une entreprise de dératisation ?",
+    question: "Quand faut-il prévoir une intervention de dépigeonnage ?",
     answer:
-      "Dès les premiers signes de présence de rats, souris ou rongeurs : bruits, crottes, odeurs, câbles rongés ou traces de passage. Plus l’intervention est rapide, plus le traitement est efficace.",
+      "Une intervention peut être nécessaire lorsque les pigeons s’installent durablement sur une toiture, une façade, un balcon, un rebord ou un bâtiment professionnel.",
   },
   {
-    question: "Intervenez-vous pour les particuliers et les professionnels ?",
+    question: "Quels sont les risques liés aux pigeons ?",
     answer:
-      "Oui, Nuisi Contrôle intervient auprès des particuliers, professionnels, commerces, restaurants, entreprises et collectivités dans l’Ain et le bassin lyonnais.",
+      "Les pigeons peuvent provoquer des salissures importantes, dégrader les façades, gêner l’activité d’un site et créer des nuisances sanitaires liées aux fientes et aux nids.",
   },
   {
-    question: "Quels rongeurs traitez-vous ?",
+    question: "Intervenez-vous pour les syndics et collectivités ?",
     answer:
-      "Nous intervenons contre les rats, souris, mulots et autres rongeurs pouvant s’installer dans une habitation, un local professionnel ou un bâtiment collectif.",
+      "Oui, Nuisi Contrôle intervient auprès des particuliers, professionnels, syndics, entreprises et collectivités dans la région lyonnaise et l’Ain.",
   },
   {
-    question: "La dératisation est-elle adaptée aux restaurants et commerces ?",
+    question: "Le dépigeonnage est-il adapté aux commerces ?",
     answer:
-      "Oui, les commerces alimentaires, restaurants, boulangeries, entrepôts et locaux professionnels nécessitent une intervention rigoureuse afin de protéger les lieux, les clients et l’activité.",
+      "Oui, les commerces, restaurants, entrepôts, bâtiments professionnels et zones recevant du public peuvent nécessiter une solution adaptée pour limiter les nuisances.",
   },
 ];
 
 export const metadata = {
-  title: "Dératisation Ain, Toussieux, Trévoux & Lyon | Nuisi Contrôle",
+  title: "Dépigeonnage Lyon, Ain, Toussieux & Villefranche | Nuisi Contrôle",
   description:
-    "Nuisi Contrôle intervient pour la dératisation dans l’Ain, à Toussieux, Trévoux, Reyrieux, Villefranche-sur-Saône, Nord Lyonnais et bassin lyonnais. Traitement rats, souris et rongeurs.",
+    "Nuisi Contrôle intervient pour le dépigeonnage à Lyon, Villeurbanne, Caluire-et-Cuire, Rillieux-la-Pape, dans l’Ain et le bassin lyonnais. Protection bâtiments, toitures, façades et locaux professionnels.",
 };
 
-export default function DeratisationPage() {
+export default function DepigeonnagePage() {
   return (
     <main className="bg-white text-[#0f0f10]">
       <section className="relative overflow-hidden bg-[#0f0f10] px-5 py-28 text-white lg:px-8 lg:py-36">
@@ -107,17 +114,17 @@ export default function DeratisationPage() {
         <div className="relative mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <div className="inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80">
-              Dératisation dans l’Ain & le bassin lyonnais
+              Dépigeonnage dans la région lyonnaise & l’Ain
             </div>
 
             <h1 className="mt-8 max-w-4xl text-4xl font-black tracking-tight md:text-6xl lg:text-7xl">
-              Dératisation professionnelle contre rats, souris et rongeurs.
+              Dépigeonnage professionnel pour protéger vos bâtiments.
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-white/70">
-              Nuisi Contrôle intervient rapidement à Toussieux, dans l’Ain, la
-              Dombes, le Val de Saône, le Nord Lyonnais et le bassin lyonnais
-              pour éliminer les rongeurs et sécuriser durablement vos espaces.
+              Nuisi Contrôle intervient auprès des particuliers, professionnels,
+              syndics et collectivités pour limiter les nuisances liées aux
+              pigeons sur les toitures, façades, balcons et zones sensibles.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -138,37 +145,36 @@ export default function DeratisationPage() {
 
             <div className="mt-8 flex flex-wrap gap-3 text-sm font-semibold text-white/70">
               <span className="rounded-full border border-white/10 px-4 py-2">
-                Particuliers
+                Toitures
               </span>
               <span className="rounded-full border border-white/10 px-4 py-2">
-                Professionnels
+                Façades
               </span>
               <span className="rounded-full border border-white/10 px-4 py-2">
-                Collectivités
+                Syndics & pros
               </span>
             </div>
           </div>
 
           <div className="relative">
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl">
-              <div className="rounded-[1.5rem] bg-white p-6 text-[#0f0f10]">
-                <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#C1121F]">
-                  Intervention rapide
+              <div className="rounded-[1.5rem] bg-white p-7 text-[#0f0f10]">
+                <p className="text-sm font-black uppercase tracking-[0.25em] text-[#C1121F]">
+                  Protection bâtiment
                 </p>
                 <h2 className="mt-4 text-3xl font-black">
-                  Des solutions adaptées à chaque infestation
+                  Des solutions adaptées à chaque configuration
                 </h2>
-                <p className="mt-4 leading-7 text-zinc-600">
-                  Chaque situation est différente : maison, appartement,
-                  restaurant, commerce, bâtiment professionnel ou collectivité.
-                  L’intervention est pensée selon le niveau d’infestation, le
-                  type de rongeur et les contraintes du lieu.
+                <p className="mt-5 leading-8 text-zinc-600">
+                  Chaque bâtiment nécessite une analyse spécifique : hauteur,
+                  accès, zones de pose, niveau de présence des pigeons et
+                  contraintes d’usage.
                 </p>
 
                 <div className="mt-8 grid gap-3">
                   {[
-                    "Diagnostic précis",
-                    "Traitement ciblé",
+                    "Diagnostic sur place",
+                    "Protection des zones sensibles",
                     "Conseils prévention",
                   ].map((item) => (
                     <div
@@ -186,7 +192,7 @@ export default function DeratisationPage() {
             </div>
 
             <div className="absolute -bottom-6 -left-4 rounded-2xl bg-[#C1121F] px-5 py-4 text-sm font-black text-white shadow-xl">
-              Rats • Souris • Rongeurs
+              Pigeons • Toitures • Façades
             </div>
           </div>
         </div>
@@ -196,43 +202,30 @@ export default function DeratisationPage() {
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
             <p className="text-sm font-black uppercase tracking-[0.25em] text-[#C1121F]">
-              Signes d’infestation
+              Signes et nuisances
             </p>
             <h2 className="mt-4 text-4xl font-black tracking-tight md:text-5xl">
-              Comment reconnaître la présence de rats ou de souris ?
+              Pourquoi intervenir contre les pigeons ?
             </h2>
             <p className="mt-6 text-lg leading-8 text-zinc-600">
-              Les rongeurs peuvent causer des dégâts matériels, contaminer les
-              surfaces et se reproduire rapidement. Une intervention rapide
-              permet de limiter les risques et d’éviter que l’infestation ne
-              s’installe durablement.
+              Les pigeons peuvent rapidement créer des nuisances visibles et
+              persistantes sur les bâtiments, façades, balcons, toitures ou
+              locaux professionnels.
             </p>
           </div>
 
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
-            {infestationSigns.map((sign) => (
+            {issues.map((issue) => (
               <div
-                key={sign}
+                key={issue}
                 className="rounded-[1.5rem] border border-zinc-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-[#C1121F]/30 hover:shadow-xl"
               >
                 <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full bg-[#0f0f10] text-white">
                   !
                 </div>
-                <p className="font-bold leading-6">{sign}</p>
+                <p className="font-bold leading-6">{issue}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="px-5 py-10 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="overflow-hidden rounded-[2rem]">
-            <img
-              src="/images/services/rat-deratisation.jpg"
-              alt="Rat présent dans une habitation"
-              className="h-[350px] w-full object-cover md:h-[500px]"
-            />
           </div>
         </div>
       </section>
@@ -242,29 +235,28 @@ export default function DeratisationPage() {
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.25em] text-[#C1121F]">
-                Rongeurs traités
+                Solutions de dépigeonnage
               </p>
               <h2 className="mt-4 text-4xl font-black tracking-tight md:text-5xl">
-                Une dératisation adaptée à chaque type de rongeur.
+                Une protection adaptée à chaque zone.
               </h2>
               <p className="mt-6 text-lg leading-8 text-zinc-600">
-                Rats, souris ou mulots : Nuisi Contrôle identifie le
-                nuisible présent et met en place une réponse adaptée à votre
-                environnement.
+                Le dépigeonnage vise à limiter l’installation des pigeons et à
+                protéger durablement les zones exposées des bâtiments.
               </p>
             </div>
 
             <div className="grid gap-5 sm:grid-cols-2">
-              {rodents.map((rodent) => (
+              {solutions.map((solution) => (
                 <div
-                  key={rodent}
+                  key={solution}
                   className="rounded-[1.7rem] bg-[#0f0f10] p-7 text-white shadow-xl"
                 >
                   <div className="mb-8 h-1.5 w-14 rounded-full bg-[#C1121F]" />
-                  <h3 className="text-2xl font-black">{rodent}</h3>
+                  <h3 className="text-2xl font-black">{solution}</h3>
                   <p className="mt-4 text-sm leading-7 text-white/60">
-                    Traitement professionnel avec diagnostic, sécurisation et
-                    conseils pour limiter les récidives.
+                    Analyse, protection et conseils pour limiter les nuisances
+                    liées aux pigeons.
                   </p>
                 </div>
               ))}
@@ -279,60 +271,45 @@ export default function DeratisationPage() {
             <p className="text-sm font-black uppercase tracking-[0.25em] text-[#C1121F]">
               Pourquoi agir rapidement ?
             </p>
-
             <h2 className="mt-4 text-4xl font-black tracking-tight md:text-5xl">
-              Pourquoi faire appel à un professionnel de la dératisation ?
+              Pourquoi faire appel à un professionnel du dépigeonnage ?
             </h2>
           </div>
 
           <div className="mt-12 grid gap-10 text-lg leading-8 text-zinc-600 lg:grid-cols-2">
             <div className="space-y-6">
               <p>
-                La présence de rats, souris ou autres rongeurs dans une
-                habitation, un commerce ou un local professionnel ne doit jamais
-                être prise à la légère. Ces nuisibles peuvent rapidement
-                s’installer dans les combles, les caves, les murs, les réserves
-                alimentaires ou les zones techniques.
+                La présence régulière de pigeons sur un bâtiment peut entraîner
+                des salissures importantes, des nuisances sonores, des odeurs et
+                une dégradation progressive des surfaces exposées.
               </p>
-
               <p>
-                En plus de provoquer une gêne au quotidien, les rongeurs peuvent
-                causer des dégâts importants : câbles rongés, isolation abîmée,
-                denrées contaminées, mauvaises odeurs ou traces de passage
-                visibles. Plus l’infestation est traitée tôt, plus il est simple
-                de limiter les dégâts et d’éviter une propagation.
+                Les fientes peuvent salir les façades, balcons, rebords,
+                enseignes, zones de passage ou espaces professionnels. Une
+                intervention adaptée permet de protéger les lieux et de réduire
+                les risques de réinstallation.
               </p>
-
               <p>
-                Une dératisation professionnelle permet d’identifier précisément
-                les zones de passage, les points d’entrée et le niveau
-                d’infestation. Le traitement peut ensuite être adapté au type de
-                lieu, au type de rongeur et aux contraintes de sécurité.
+                Le dépigeonnage professionnel permet d’identifier les zones
+                attractives, les points de pose et les solutions les plus
+                cohérentes selon la configuration du bâtiment.
               </p>
             </div>
 
             <div className="space-y-6">
               <p>
-                Nuisi Contrôle intervient pour la dératisation à Toussieux,
-                Trévoux, Reyrieux, Villefranche-sur-Saône, dans l’Ain, la
-                Dombes, le Val de Saône, le Nord Lyonnais et le bassin lyonnais.
-                L’objectif est de proposer une intervention sérieuse, efficace
-                et durable.
+                Nuisi Contrôle intervient pour le dépigeonnage à Lyon,
+                Villeurbanne, Caluire-et-Cuire, Rillieux-la-Pape, dans l’Ain,
+                le Nord Lyonnais et le bassin lyonnais.
               </p>
-
               <p>
-                Chaque situation est différente : maison individuelle,
-                appartement, restaurant, commerce, entreprise, local technique
-                ou collectivité. Une analyse sur place permet de mettre en place
-                une solution cohérente, sans intervention générique ni
-                traitement approximatif.
+                Les interventions peuvent concerner une habitation, une
+                copropriété, un commerce, une entreprise, une collectivité ou un
+                local professionnel exposé aux nuisances des pigeons.
               </p>
-
               <p>
-                Après l’intervention, des conseils de prévention peuvent être
-                donnés afin de réduire les risques de récidive : limitation des
-                accès, entretien des zones sensibles, surveillance des traces et
-                correction des points favorables à l’installation des rongeurs.
+                Après l’intervention, des conseils peuvent être apportés afin de
+                surveiller les zones sensibles et limiter les risques de retour.
               </p>
             </div>
           </div>
@@ -346,7 +323,7 @@ export default function DeratisationPage() {
               Méthode d’intervention
             </p>
             <h2 className="mt-4 text-4xl font-black tracking-tight md:text-5xl">
-              Une intervention structurée pour un résultat durable.
+              Une intervention structurée et adaptée au bâtiment.
             </h2>
           </div>
 
@@ -356,18 +333,14 @@ export default function DeratisationPage() {
                 key={step.title}
                 className="relative overflow-hidden rounded-[1.7rem] border border-zinc-200 bg-white p-6 shadow-sm"
               >
-                <div className="relative">
-                  <span className="absolute -top-10 right-0 text-8xl font-black text-[#C1121F]/10">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-
-                  <div className="mb-7 flex h-12 w-12 items-center justify-center rounded-full bg-[#C1121F] text-sm font-black text-white">
-                    {index + 1}
-                  </div>
+                <span className="absolute right-4 top-2 text-8xl font-black text-[#C1121F]/10">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div className="relative mb-7 flex h-12 w-12 items-center justify-center rounded-full bg-[#C1121F] text-sm font-black text-white">
+                  {index + 1}
                 </div>
-
-                <h3 className="text-xl font-black">{step.title}</h3>
-                <p className="mt-4 text-sm leading-7 text-zinc-600">
+                <h3 className="relative text-xl font-black">{step.title}</h3>
+                <p className="relative mt-4 text-sm leading-7 text-zinc-600">
                   {step.text}
                 </p>
               </div>
@@ -378,7 +351,6 @@ export default function DeratisationPage() {
 
       <section className="relative overflow-hidden bg-[#0f0f10] px-5 py-24 text-white lg:px-8">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(193,18,31,0.18),transparent_35%)]" />
-
         <div className="relative mx-auto max-w-7xl">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
             <div>
@@ -386,12 +358,11 @@ export default function DeratisationPage() {
                 Pour qui ?
               </p>
               <h2 className="mt-4 text-4xl font-black tracking-tight md:text-5xl">
-                Particuliers, professionnels et collectivités.
+                Particuliers, professionnels, syndics et collectivités.
               </h2>
               <p className="mt-6 text-lg leading-8 text-white/65">
-                Nuisi Contrôle intervient dans différents environnements avec
-                une approche sérieuse, discrète et adaptée aux contraintes de
-                chaque lieu.
+                Nuisi Contrôle intervient avec une approche sérieuse, discrète
+                et adaptée aux contraintes de chaque lieu.
               </p>
             </div>
 
@@ -416,16 +387,13 @@ export default function DeratisationPage() {
               <p className="text-sm font-black uppercase tracking-[0.25em] text-[#C1121F]">
                 Zone d’intervention
               </p>
-
               <h2 className="mt-4 text-4xl font-black tracking-tight md:text-5xl">
-                Dératisation à Toussieux, dans l’Ain et autour de Lyon.
+                Dépigeonnage à Lyon, dans l’Ain et le bassin lyonnais.
               </h2>
-
               <p className="mt-6 text-lg leading-8 text-zinc-600">
-                Basé à Toussieux, Nuisi Contrôle intervient dans l’Ain, la
-                Dombes, le Val de Saône, le Nord Lyonnais et le bassin lyonnais
-                pour les besoins de dératisation des particuliers,
-                professionnels et collectivités.
+                Basé à Toussieux, Nuisi Contrôle intervient dans la région
+                lyonnaise, l’Ain, le Nord Lyonnais et le bassin lyonnais pour
+                les besoins de dépigeonnage.
               </p>
             </div>
 
@@ -460,10 +428,10 @@ export default function DeratisationPage() {
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
             <p className="text-sm font-black uppercase tracking-[0.25em] text-[#C1121F]">
-              FAQ dératisation
+              FAQ dépigeonnage
             </p>
             <h2 className="mt-4 text-4xl font-black tracking-tight md:text-5xl">
-              Vos questions sur la dératisation.
+              Vos questions sur le dépigeonnage.
             </h2>
           </div>
 
@@ -484,18 +452,16 @@ export default function DeratisationPage() {
       <section className="px-5 py-24 lg:px-8">
         <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-[#0f0f10] px-7 py-16 text-center text-white shadow-2xl md:px-12 md:py-24">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(193,18,31,0.28),transparent_38%)]" />
-
           <div className="relative mx-auto max-w-4xl">
             <p className="text-sm font-black uppercase tracking-[0.25em] text-white/60">
               Intervention rapide
             </p>
             <h2 className="mt-5 text-4xl font-black tracking-tight md:text-6xl lg:text-7xl">
-              Un problème de rats ou de souris ?
+              Besoin d’une solution de dépigeonnage ?
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/65">
-              Contactez Nuisi Contrôle pour une dératisation professionnelle
-              dans l’Ain, à Toussieux, Trévoux, Reyrieux, Villefranche-sur-Saône
-              et dans le bassin lyonnais.
+              Contactez Nuisi Contrôle pour une intervention de dépigeonnage à
+              Lyon, dans l’Ain et le bassin lyonnais.
             </p>
 
             <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
@@ -512,12 +478,6 @@ export default function DeratisationPage() {
               >
                 Appeler maintenant
               </a>
-            </div>
-
-            <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm font-bold text-white/70">
-              <span>✓ Devis gratuit</span>
-              <span>✓ Intervention rapide</span>
-              <span>✓ Particuliers & professionnels</span>
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const services = ["Dératisation", "Désinsectisation", "Désinfection"];
+const services = ["Dératisation", "Désinsectisation", "Désinfection", "Dépigeonnage"];
 
 export function ContactForm() {
   const [status, setStatus] = useState<
