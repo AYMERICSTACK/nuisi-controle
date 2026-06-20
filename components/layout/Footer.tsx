@@ -30,8 +30,9 @@ export function Footer() {
             </p>
 
             <p className="mt-6 max-w-sm leading-7 text-white/60">
-              Dératisation, désinsectisation, désinfection et dépigeonnage pour particuliers,
-              professionnels et collectivités dans l’Ain et le bassin lyonnais.
+              Dératisation, désinsectisation, désinfection et dépigeonnage pour
+              particuliers, professionnels et collectivités dans l’Ain et le
+              bassin lyonnais.
             </p>
 
             <a
@@ -80,20 +81,18 @@ export function Footer() {
             <div className="mt-5 space-y-3 text-white/60">
               <p>Toussieux, Ain</p>
               <p>Intervention région lyonnaise & Ain</p>
-              <p>contact@nuisicontrole.fr</p>
+              <p>nuisicontrole69@gmail.com</p>
             </div>
 
             <div className="mt-6 flex flex-wrap gap-2">
-              {["Lyon", "Villeurbanne", "Nord Lyonnais", "Ain"].map(
-                (area) => (
-                  <span
-                    key={area}
-                    className="rounded-full border border-white/10 px-3 py-1 text-xs font-bold text-white/60"
-                  >
-                    {area}
-                  </span>
-                ),
-              )}
+              {["Lyon", "Villeurbanne", "Nord Lyonnais", "Ain"].map((area) => (
+                <span
+                  key={area}
+                  className="rounded-full border border-white/10 px-3 py-1 text-xs font-bold text-white/60"
+                >
+                  {area}
+                </span>
+              ))}
             </div>
           </div>
         </div>

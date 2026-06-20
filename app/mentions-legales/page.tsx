@@ -24,9 +24,9 @@ export default function MentionsLegalesPage() {
               <br />
               Téléphone : 06 62 33 20 36
               <br />
-              Email : contact@nuisicontrole.fr
+              Email : nuisicontrole69@gmail.com
               <br />
-              SIRET : À compléter
+              SIRET : 81830045100031
             </p>
           </section>
 

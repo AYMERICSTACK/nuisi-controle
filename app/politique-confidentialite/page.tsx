@@ -66,7 +66,7 @@ export default function PolitiqueConfidentialitePage() {
             <p className="mt-4">
               Pour toute demande :
               <br />
-              contact@nuisicontrole.fr
+              nuisicontrole69@gmail.com
             </p>
           </section>
 

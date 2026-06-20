@@ -19,7 +19,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.nuisicontrole.fr"),
   title: {
-    default: "Nuisi Contrôle | Dératisation, désinsectisation, désinfection & dépigeonnage",
+    default:
+      "Nuisi Contrôle | Dératisation, désinsectisation, désinfection & dépigeonnage",
     template: "%s | Nuisi Contrôle",
   },
   description:
