@@ -27,7 +27,7 @@ const services = [
     description:
       "Solutions de dépigeonnage pour protéger bâtiments, toitures, façades et locaux professionnels.",
     href: "/depigeonnage",
-    image: "/images/services/technicien-nuisible.png",
+    image: "/images/services/depigeonnage.jpg",
   },
 ];
 

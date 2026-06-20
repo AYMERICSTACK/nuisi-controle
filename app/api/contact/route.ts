@@ -44,7 +44,7 @@ export async function POST(request: Request) {
           <div style="max-width:640px;margin:auto;background:white;border-radius:20px;padding:32px;">
             <div style="text-align:center;margin-bottom:24px;">
   <img
-    src="https://nuisi-controle.vercel.app/logo/logo-nuisi-controle.png"
+    src="https://www.nuisicontrole.fr/logo/logo-nuisi-controle.png"
     alt="Nuisi Contrôle"
     style="max-width:220px;height:auto;"
   />
@@ -113,7 +113,7 @@ export async function POST(request: Request) {
           <div style="max-width:640px;margin:auto;background:white;border-radius:20px;padding:32px;">
             <div style="text-align:center;margin-bottom:24px;">
   <img
-    src="https://nuisi-controle.vercel.app/logo/logo-nuisi-controle.png"
+    src="https://www.nuisicontrole.fr/logo/logo-nuisi-controle.png"
     alt="Nuisi Contrôle"
     style="max-width:220px;height:auto;"
   />
