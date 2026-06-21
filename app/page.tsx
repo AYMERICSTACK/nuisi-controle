@@ -353,6 +353,7 @@ export default function Home() {
                   "Puces",
                   "Guêpes",
                   "Frelons",
+                  "Moustiques",
                 ].map((item) => (
                   <span
                     key={item}

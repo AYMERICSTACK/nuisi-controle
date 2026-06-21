@@ -11,6 +11,7 @@ const insects = [
   "Puces",
   "Guêpes",
   "Frelons",
+  "Moustiques",
 ];
 
 const infestationSigns = [
